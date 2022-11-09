@@ -3,7 +3,7 @@
   "description": "Bootstrap 4 Black Design",
   "version": "1.0.1",
   "homepage": "http://creative-tim.com/product/blk-design-system",
-  "author": "Creative Tim",
+  "author": "Creative Tim and IlernaDaw",
   "license": "Creative Tim License <www.creative-tim.com/license>",
   "devDependencies": {
     "gulp": "^3.9.1",
