@@ -5,9 +5,7 @@ const dynamicCacheName = 'runtimeCache';
 const precacheAssets = [
     'index.php',
     'index.html',
-    'assets/css/style.css',
-    'pwa.js',
-    'js/custom.js',
+    
     
 ];
 
