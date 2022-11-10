@@ -3,8 +3,8 @@ const dynamicCacheName = 'runtimeCache';
 
 // Pre Carga de Assets
 const precacheAssets = [
-    '/',
-    '..',
+    'index.html',
+   
     
 ];
 

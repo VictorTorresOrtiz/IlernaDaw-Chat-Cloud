@@ -76,7 +76,7 @@
                     <ul class="nav">
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="#">Team</a></li>
-                        <li><a href="#">Account <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                        <li><a href="#">Welcome Back! <img src="assets/images/profile-header.jpg" alt=""></a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
