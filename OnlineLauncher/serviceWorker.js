@@ -3,8 +3,11 @@ const dynamicCacheName = 'runtimeCache';
 
 // Pre Carga de Assets
 const precacheAssets = [
-    '../OnlineLauncher',
+    'index.php',
     'index.html',
+    'assets/css/style.css',
+    'pwa.js',
+    'js/custom.js',
     
 ];
 
