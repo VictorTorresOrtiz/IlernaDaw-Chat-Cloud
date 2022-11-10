@@ -12,7 +12,7 @@
 	// WOW JS
 	$(window).on ('load', function (){
         if ($(".wow").length) { 
-            var wow = new WOW ({
+            let wow = new WOW ({
                 boxClass:     'wow',      // Animated element css class (default is wow)
                 animateClass: 'animated', // Animation css class (default is animated)
                 offset:       20,         // Distance to the element when triggering the animation (default is 0)
@@ -24,9 +24,9 @@
     });
 
 	$(window).scroll(function() {
-	  var scroll = $(window).scrollTop();
-	  var box = $('.header-text').height();
-	  var header = $('header').height();
+	  let scroll = $(window).scrollTop();
+	  let box = $('.header-text').height();
+	  let header = $('header').height();
 
 	  if (scroll >= box - header) {
 	    $("header").addClass("background-header");
@@ -39,13 +39,13 @@
         $('.filters ul li').removeClass('active');
         $(this).addClass('active');
           
-          var data = $(this).attr('data-filter');
+          let data = $(this).attr('data-filter');
           $grid.isotope({
             filter: data
           })
         });
 
-        var $grid = $(".grid").isotope({
+        let $grid = $(".grid").isotope({
           	itemSelector: ".all",
           	percentPosition: true,
           	masonry: {
@@ -53,7 +53,7 @@
         }
     })
 
-	var width = $(window).width();
+	let width = $(window).width();
 		$(window).resize(function() {
 			if (width > 992 && $(window).width() < 992) {
 				location.reload();
@@ -66,7 +66,7 @@
 
 
 	$(document).on("click", ".naccs .menu div", function() {
-		var numberIndex = $(this).index();
+		let numberIndex = $(this).index();
 	
 		if (!$(this).is("active")) {
 			$(".naccs .menu div").removeClass("active");
@@ -75,7 +75,7 @@
 			$(this).addClass("active");
 			$(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
 	
-			var listItemHeight = $(".naccs ul")
+			let listItemHeight = $(".naccs ul")
 				.find("li:eq(" + numberIndex + ")")
 				.innerHeight();
 			$(".naccs ul").height(listItemHeight + "px");
@@ -161,7 +161,7 @@
 	// Menu elevator animation
 	$('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			var target = $(this.hash);
+			let target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 			if (target.length) {
 				var width = $(window).width();
@@ -203,10 +203,10 @@
 	});
 
 	function onScroll(event){
-	    var scrollPos = $(document).scrollTop();
+	    let scrollPos = $(document).scrollTop();
 	    $('.nav a').each(function () {
-	        var currLink = $(this);
-	        var refElement = $(currLink.attr("href"));
+	        let currLink = $(this);
+	        let refElement = $(currLink.attr("href"));
 	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
 	            $('.nav ul li a').removeClass("active");
 	            currLink.addClass("active");
@@ -243,14 +243,14 @@
     // Open/Close Submenus
     if (dropdownOpener.length) {
         dropdownOpener.each(function () {
-            var _this = $(this);
+            let _this = $(this);
 
             _this.on('tap click', function (e) {
-                var thisItemParent = _this.parent('li'),
+                let thisItemParent = _this.parent('li'),
                     thisItemParentSiblingsWithDrop = thisItemParent.siblings('.has-sub');
 
                 if (thisItemParent.hasClass('has-sub')) {
-                    var submenu = thisItemParent.find('> ul.sub-menu');
+                    let submenu = thisItemParent.find('> ul.sub-menu');
 
                     if (submenu.is(':visible')) {
                         submenu.slideUp(450, 'easeInOutQuad');
