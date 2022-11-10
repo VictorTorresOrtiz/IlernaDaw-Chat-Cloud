@@ -86,7 +86,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <ul class="nav">
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="#">Team</a></li>
-                        <li><a href="profile.html">Welcome Back!  <?php echo htmlspecialchars($_SESSION["username"]); ?> <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                        <li><a href="profile.php">Welcome Back!  <?php echo htmlspecialchars($_SESSION["username"]); ?> <img src="assets/images/profile-header.jpg" alt=""></a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
