@@ -249,3 +249,18 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+
+
+
+/*Arrow Back*/
+
+.arrowBack {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-left: 12px;
+    
+}
