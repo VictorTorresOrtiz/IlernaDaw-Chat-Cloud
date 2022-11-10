@@ -22,7 +22,7 @@
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
     <!--PWA ASSETS-->
-    <link rel="manifest" href="PWA_assets/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <!-- IOS SUPPORT -->
     <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
     <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
@@ -194,8 +194,8 @@
   <script src="assets/js/custom.js"></script>
 
    <!--JS PWA-->
-   <script src="PWA_assets/pwa.js"></script>
-   <script src="PWA_assets/serviceWorker.js"></script>
+   <script src="pwa.js"></script>
+   <script src="serviceWorker.js"></script>
 
 
   </body>
