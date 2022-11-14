@@ -18,7 +18,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Profile || IlernaDaw</title>
+    <title>Profile || IlernaHub</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -101,7 +101,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <div class="main-info header-text">
                       <span>Online</span>
                       <h4>Welcome Back! <br> <?php echo htmlspecialchars($_SESSION["username"]); ?></h4>
-                      <p>You Haven't Gone Live yet. Go Live By Touching The Button Below.</p>
+                      <p>ESTADO</p>
                       <div class="main-border-button">
                         <a href="./bdd/logout.php">Logout</a>
                       </div>
@@ -109,7 +109,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                   </div>
                   <div class="col-lg-4 align-self-center">
                     <ul>
-                      <li>Account Settings <a href="#"><span><i class="fa fa-gear"></i></span></li></a>
+                      <li>Account Settings <a href="../../IlernaUser-Management/index.php"><span><i class="fa fa-gear"></i></span></li></a>
                       <li>Friends Online <a href="#"><span><i class="fa fa-user-group"></i></span></li></a>                     
                       <li>Pricing <a href="#"><span><i class="fa fa-coins"></i></span></li></a>
                     </ul>

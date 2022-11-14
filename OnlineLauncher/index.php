@@ -1,13 +1,30 @@
 <?php
-// Initialize the session
-session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
-    exit;
-}
+  session_start();
+  include('bdd/config.php');
+  if(isset($_POST['login']))
+  {
+    $status='1';
+    $email=$_POST['username'];
+    $password=md5($_POST['password']);
+    $sql ="SELECT email,password FROM users WHERE email=:email and password=:password and status=(:status)";
+    $query= $dbh -> prepare($sql);
+    $query-> bindParam(':email', $email, PDO::PARAM_STR);
+    $query-> bindParam(':password', $password, PDO::PARAM_STR);
+    $query-> bindParam(':status', $status, PDO::PARAM_STR);
+    $query-> execute();
+    $results=$query->fetchAll(PDO::FETCH_OBJ);
+      if($query->rowCount() > 0)
+      {
+      $_SESSION['alogin']=$_POST['username'];
+      echo "<script type='text/javascript'> document.location = 'profile.php'; </script>";
+      } else{
+        
+        echo "<script>alert('Invalid Details Or Account Not Confirmed');</script>";
+
+      }
+  }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,7 +103,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <ul class="nav">
                         <li><a href="index.html" class="active">Home</a></li>
                         <li><a href="#">Team</a></li>
-                        <li><a href="profile.php">Welcome Back!  <?php echo htmlspecialchars($_SESSION["username"]); ?> <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                        <li><a href="profile.php">Welcome Back!<img src="assets/images/profile-header.jpg" alt=""></a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
