@@ -69,9 +69,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="browse.html">Team</a></li>
-                        <li><a href="profile.html" class="active">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                        <li><a href="profile.php" class="active">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -109,13 +109,47 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                   </div>
                   <div class="col-lg-4 align-self-center">
                     <ul>
-                      <li>Games Downloaded <span>3</span></li>
-                      <li>Friends Online <span>16</span></li>
-                      <li>Live Streams <span>None</span></li>
-                      <li>Clips <span>29</span></li>
+                      <li>Account Settings <a href="#"><span><i class="fa fa-gear"></i></span></li></a>
+                      <li>Friends Online <a href="#"><span><i class="fa fa-user-group"></i></span></li></a>                     
+                      <li>Pricing <a href="#"><span><i class="fa fa-coins"></i></span></li></a>
                     </ul>
                   </div>
-                </div>      
+                </div> 
+               
+       <!-- ***** Apps settings ***** -->
+       <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4><em>Apps</em> Settings</h4>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/apps_assets/chatReal.png" alt="">
+                      <a href="detailsChat.html">
+                      <h4>Ilerna Chat<br><span>Live Chat App<br><br><br></span></h4>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/apps_assets/cloud.png" alt="">
+                      <h4>Ilerna Cloud<br><span>Cloud System<br><br><br></span></h4>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/apps_assets/alc.png" alt="">
+                      <h4>Alcalá a la Carta<br><span>Listing App<br><br><br></span></h4>
+                    </div>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Apps Setings ***** -->
+    
         </div>
       </div>
     </div>
@@ -125,9 +159,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
-          
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
+          <p>Copyright © 2022 <a href="#">IlernaDaw</a> || All rights reserved. 
         </div>
       </div>
     </div>

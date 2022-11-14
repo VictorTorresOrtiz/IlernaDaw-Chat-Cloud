@@ -130,7 +130,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <div class="row">
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/apps_assets/chat.png" alt="">
+                      <img src="assets/images/apps_assets/chatReal.png" alt="">
                       <a href="detailsChat.html">
                       <h4>Ilerna Chat<br><span>Live Chat App<br><br><br></span></h4>
                       </a>
@@ -141,7 +141,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                   </div>
                   <div class="col-lg-3 col-sm-6">
                     <div class="item">
-                      <img src="assets/images/apps_assets/chat.png" alt="">
+                      <img src="assets/images/apps_assets/cloud.png" alt="">
                       <h4>Ilerna Cloud<br><span>Cloud System<br><br><br></span></h4>
                       <ul>
                         <li><i class="fab fa-github"></i></li>
@@ -164,7 +164,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                   <div class="row">
                     <div class="col-lg-3 col-sm-6">
                       <div class="item">
-                        <img src="assets/images/popular-01.jpg" alt="">
+                        <img src="assets/images/apps_assets/alc.png" alt="">
                         <h4>Alcalá a la Carta<br><span>Listing App</span></h4>
                         <ul>
                           <li><i class="fab fa-github"></i></li>
