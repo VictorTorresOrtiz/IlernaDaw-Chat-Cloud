@@ -99,7 +99,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                   </div>
                   <div class="col-lg-4 align-self-center">
                     <div class="main-info header-text">
-                      <span>Offline</span>
+                      <span>Online</span>
                       <h4>Welcome Back! <br> <?php echo htmlspecialchars($_SESSION["username"]); ?></h4>
                       <p>You Haven't Gone Live yet. Go Live By Touching The Button Below.</p>
                       <div class="main-border-button">
@@ -116,6 +116,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     </ul>
                   </div>
                 </div>
+                <!-->
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="clips">
@@ -187,7 +188,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           </div>
           <!-- ***** Banner End ***** -->
 
-          <!-- ***** Gaming Library Start ***** -->
+          <!-- ***** Gaming Library Start ***** --
           <div class="gaming-library profile-library">
             <div class="col-lg-12">
               <div class="heading-section">

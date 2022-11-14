@@ -33,24 +33,15 @@ self.addEventListener('activate', function (event) {
 });
 
 
-//Borrar Cache
-
-
-
-// Evento SERVER DOWN
-/*
-self.addEventListener('fetch', function (event) {
+//Control fetch
+self.addEventListener('fetch', function(event) {
+    console.log('Fetching some data');
+    console.log(event.request.url);
     event.respondWith(
-        caches.match(event.request).then(cacheRes => {
-            return cacheRes || fetch(event.request).then(response => {
-                return caches.open(dynamicCacheName).then(function (cache) {
-                    cache.put(event.request, response.clone());
-                    return response;
-                })
-            });
-        }).catch(function() {
-            return caches.match('INTRODUCIR PAGINA CAIDA SERVER');
-          })
+    caches.match(event.request).then(function(response) {
+    console.log('File is on the cache! Hooray! Let\'s take it from there!');
+    return response || fetch(event.request);
+    })
     );
-});
-*/
+    });
+

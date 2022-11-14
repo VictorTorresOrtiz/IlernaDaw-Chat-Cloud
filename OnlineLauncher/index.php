@@ -109,7 +109,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <div class="row">
               <div class="col-lg-7">
                 <div class="header-text">
-                  <h6>Welcome to IlernaLaucher</h6>
+                  <h6>Welcome to IlernaHub</h6>
                   <h4><em>Browse</em> our Apps online</h4>
                   <div class="main-button">
                     <a href="#">Browse Now</a>
