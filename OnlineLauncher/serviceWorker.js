@@ -3,6 +3,8 @@ const dynamicCacheName = 'runtimeCache';
 
 // Pre Carga de Assets
 const precacheAssets = [
+    './',
+    './pwa.js',
     'index.php',
     'index.html',
     
@@ -30,7 +32,13 @@ self.addEventListener('activate', function (event) {
     );
 });
 
+
+//Borrar Cache
+
+
+
 // Evento SERVER DOWN
+/*
 self.addEventListener('fetch', function (event) {
     event.respondWith(
         caches.match(event.request).then(cacheRes => {
@@ -45,3 +53,4 @@ self.addEventListener('fetch', function (event) {
           })
     );
 });
+*/
