@@ -116,8 +116,8 @@
                   <div class="col-lg-4 align-self-center">
                     <div class="main-info header-text">
                       <span>Online</span>
-                      <h4>Welcome Back! <br> <?php echo htmlspecialchars($_SESSION["username"]); ?></h4>
-                      <p>ESTADO</p>
+                      <h4>Welcome Back!</h4>
+                      <p>Si quieres contribuir en nuestro proyecto puedes acceder a nuestro <a href="https://github.com/VictorTorresOrtiz">GitHub</a></p>
                       <div class="main-border-button">
                         <a href="../../IlernaUser-Management/logout.php">Logout</a>
                       </div>
