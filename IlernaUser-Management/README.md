@@ -1,6 +1,6 @@
 # User-Management-PHP-MYSQL
 
-PHP User Management System is a powerful PHP script that offers a secure user management system. The application is a great way to build your website, allowing your users to register an account and build restricted access to certain users. We offer great support and it’s very easy to install. It’s powered by MYSQL and PHP.
+Ilerna User Management WEB
 
 # User Features
 
