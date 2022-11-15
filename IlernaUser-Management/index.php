@@ -68,6 +68,7 @@ echo "<script type='text/javascript'> document.location = 'profile.php'; </scrip
 								</form>
 								<br>
 								<p>Don't Have an Account? <a href="register.php" >Signup</a></p>
+								
 							</div>
 						</div>
 					</div>
